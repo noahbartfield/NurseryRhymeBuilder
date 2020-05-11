@@ -6,7 +6,8 @@ function Home() {
 
   useEffect(() => {
     const authHeader = createAuthHeaders();
-    fetch('/api/v1/values', {
+    console.log("authHeader: ", authHeader)
+    fetch('/api/v1/Values', {
       headers: authHeader
     })
       .then(response => response.json())

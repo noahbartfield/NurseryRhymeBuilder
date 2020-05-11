@@ -12,8 +12,6 @@ namespace Capstone.Models.Data
     // Instead, always convert an ApplicationUser to an ApplicationUserViewModel before it get sent as JSON
     public class ApplicationUser : IdentityUser
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string StreetAddress { get; set; }
+        public string UserName { get; set; }
     }
 }
