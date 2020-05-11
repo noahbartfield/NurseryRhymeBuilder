@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Capstone.Models.Data;
+using Capstone.Models;
 
 namespace Capstone.Data
 {
@@ -16,5 +17,8 @@ namespace Capstone.Data
         }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<RefreshToken> RefreshToken { get; set; }
+        public DbSet<NurseryRhyme> NurseryRhymes { get; set; }
+        public DbSet<Word> Words { get; set; }
+
     }
 }
